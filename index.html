@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MOONSHOT - The Next Generation Meme Coin Revolution. Join our community-driven crypto project.">
+    <meta property="og:title" content="MOONSHOT - Meme Coin Revolution">
+    <meta property="og:description" content="A community-driven meme coin with real utility and massive potential.">
+    <meta property="og:type" content="website">
+    <title>MOONSHOT - The Next Generation Meme Coin Revolution</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div id="loading" class="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        ↑
+    </button>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="container nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🚀</span>
+                <span class="logo-text">MOONSHOT</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#tokenomics" class="nav-link">Tokenomics</a></li>
+                <li><a href="#roadmap" class="nav-link">Roadmap</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#buy" class="btn btn-primary btn-nav">Buy Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-icon">🚀</div>
+                <h1 class="hero-title animate-fade-in">Welcome to MOONSHOT</h1>
+                <p class="hero-subtitle animate-fade-in">The Next Generation Meme Coin Revolution</p>
+                <div class="hero-buttons animate-fade-in">
+                    <a href="#buy" class="btn btn-primary btn-large">Buy Now</a>
+                    <a href="#whitepaper" class="btn btn-outline btn-large" target="_blank">Read Whitepaper</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>↓</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About MOONSHOT</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>MOONSHOT is more than just a meme coin – it's a community-driven movement dedicated to revolutionizing the crypto space. Built on transparency, security, and the power of decentralization, MOONSHOT aims to create lasting value for all holders.</p>
+                    <p>Our mission is to build a sustainable ecosystem where every member has a voice and benefits from our collective success. Through innovative tokenomics, strategic partnerships, and unwavering commitment to our community, we're not just going to the moon – we're building a base there.</p>
+                    <p>Join thousands of holders who believe in the power of community, the potential of blockchain technology, and the promise of financial freedom. Together, we're stronger. Together, we moon.</p>
+                </div>
+                <div class="about-image">
+                    <div class="about-graphic">
+                        <div class="graphic-circle"></div>
+                        <div class="graphic-icon">🌙</div>
+                    </div>
+                </div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3 class="feature-title">Community Driven</h3>
+                    <p class="feature-description">Every decision is made with community input and benefit</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3 class="feature-title">Secure &amp; Transparent</h3>
+                    <p class="feature-description">Audited smart contracts and transparent operations</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3 class="feature-title">Decentralized</h3>
+                    <p class="feature-description">True decentralization with fair token distribution</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3 class="feature-title">Moon Mission</h3>
+                    <p class="feature-description">Strategic roadmap designed for long-term growth</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section id="tokenomics" class="section tokenomics-section">
+        <div class="container">
+            <h2 class="section-title">Tokenomics</h2>
+            <div class="tokenomics-content">
+                <div class="tokenomics-chart">
+                    <canvas id="pieChart" width="400" height="400"></canvas>
+                    <div class="chart-legend" id="chartLegend"></div>
+                </div>
+                <div class="tokenomics-details">
+                    <div class="detail-card">
+                        <div class="detail-label">Total Supply</div>
+                        <div class="detail-value">1,000,000,000</div>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-label">Tax</div>
+                        <div class="detail-value">5% (3% Marketing, 2% LP)</div>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-label">Contract Address</div>
+                        <div class="detail-value contract-address" id="contractAddress">
+                            <span>0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb</span>
+                            <button class="copy-btn" id="copyBtn" aria-label="Copy contract address">📋</button>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-label">Chain</div>
+                        <div class="detail-value">Ethereum</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="section roadmap-section">
+        <div class="container">
+            <h2 class="section-title">Roadmap to the Moon</h2>
+            <div class="roadmap-timeline">
+                <div class="roadmap-item completed">
+                    <div class="roadmap-marker"></div>
+                    <div class="roadmap-content">
+                        <div class="roadmap-header">
+                            <h3>Phase 1 - Launch</h3>
+                            <span class="roadmap-quarter">Q1 2025</span>
+                        </div>
+                        <ul class="roadmap-list">
+                            <li>✓ Website Launch</li>
+                            <li>✓ Smart Contract Deployment</li>
+                            <li>✓ Initial Marketing Campaign</li>
+                            <li>✓ Community Building</li>
+                        </ul>
+                        <span class="status-badge status-completed">Completed</span>
+                    </div>
+                </div>
+                <div class="roadmap-item in-progress">
+                    <div class="roadmap-marker"></div>
+                    <div class="roadmap-content">
+                        <div class="roadmap-header">
+                            <h3>Phase 2 - Growth</h3>
+                            <span class="roadmap-quarter">Q2 2025</span>
+                        </div>
+                        <ul class="roadmap-list">
+                            <li>⏳ Exchange Listings (DEX)</li>
+                            <li>⏳ Partnerships</li>
+                            <li>⏳ Influencer Collaborations</li>
+                            <li>⏳ Audit Completion</li>
+                        </ul>
+                        <span class="status-badge status-progress">In Progress</span>
+                    </div>
+                </div>
+                <div class="roadmap-item upcoming">
+                    <div class="roadmap-marker"></div>
+                    <div class="roadmap-content">
+                        <div class="roadmap-header">
+                            <h3>Phase 3 - Expansion</h3>
+                            <span class="roadmap-quarter">Q3 2025</span>
+                        </div>
+                        <ul class="roadmap-list">
+                            <li>○ CEX Listings</li>
+                            <li>○ NFT Collection Launch</li>
+                            <li>○ Staking Platform</li>
+                            <li>○ Global Marketing Push</li>
+                        </ul>
+                        <span class="status-badge status-upcoming">Upcoming</span>
+                    </div>
+                </div>
+                <div class="roadmap-item upcoming">
+                    <div class="roadmap-marker"></div>
+                    <div class="roadmap-content">
+                        <div class="roadmap-header">
+                            <h3>Phase 4 - Moon</h3>
+                            <span class="roadmap-quarter">Q4 2025</span>
+                        </div>
+                        <ul class="roadmap-list">
+                            <li>○ Major Exchange Listings</li>
+                            <li>○ Metaverse Integration</li>
+                            <li>○ Mobile App Launch</li>
+                            <li>○ Worldwide Adoption</li>
+                        </ul>
+                        <span class="status-badge status-upcoming">Upcoming</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section team-section">
+        <div class="container">
+            <h2 class="section-title">Meet the Team</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <div class="avatar-gradient avatar-1">AT</div>
+                    </div>
+                    <h3 class="team-name">Alex Thompson</h3>
+                    <p class="team-role">Founder &amp; CEO</p>
+                    <p class="team-bio">Crypto veteran with 8+ years of experience in blockchain technology and community building. Previously led successful DeFi projects.</p>
+                    <div class="team-socials">
+                        <a href="#" class="social-link" target="_blank" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" target="_blank" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="social-link" target="_blank" aria-label="Telegram">✈️</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <div class="avatar-gradient avatar-2">SC</div>
+                    </div>
+                    <h3 class="team-name">Sarah Chen</h3>
+                    <p class="team-role">Head of Marketing</p>
+                    <p class="team-bio">Marketing strategist specializing in crypto growth and viral campaigns. Helped multiple tokens achieve 1000x growth.</p>
+                    <div class="team-socials">
+                        <a href="#" class="social-link" target="_blank" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" target="_blank" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="social-link" target="_blank" aria-label="Telegram">✈️</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <div class="avatar-gradient avatar-3">MR</div>
+                    </div>
+                    <h3 class="team-name">Marcus Rodriguez</h3>
+                    <p class="team-role">Lead Developer</p>
+                    <p class="team-bio">Full-stack blockchain developer with expertise in Solidity and smart contract security. Former Ethereum Foundation contributor.</p>
+                    <div class="team-socials">
+                        <a href="#" class="social-link" target="_blank" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" target="_blank" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="social-link" target="_blank" aria-label="Telegram">✈️</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <div class="avatar-gradient avatar-4">EW</div>
+                    </div>
+                    <h3 class="team-name">Emma Wilson</h3>
+                    <p class="team-role">Community Manager</p>
+                    <p class="team-bio">Community building expert with a passion for creating engaging, supportive crypto communities. Active in the space since 2017.</p>
+                    <div class="team-socials">
+                        <a href="#" class="social-link" target="_blank" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" target="_blank" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="social-link" target="_blank" aria-label="Telegram">✈️</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🚀</span>
+                        <span class="logo-text">MOONSHOT</span>
+                    </div>
+                    <p class="footer-description">Join the MOONSHOT revolution. A community-driven meme coin with real utility and massive potential.</p>
+                    <p class="footer-copyright">© 2025 MOONSHOT. All rights reserved.</p>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#tokenomics">Tokenomics</a></li>
+                        <li><a href="#roadmap">Roadmap</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Community</h4>
+                    <p class="community-text">Join our community!</p>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/moonshot" class="social-icon" target="_blank" aria-label="Twitter">🐦</a>
+                        <a href="https://t.me/moonshot" class="social-icon" target="_blank" aria-label="Telegram">✈️</a>
+                        <a href="https://discord.gg/moonshot" class="social-icon" target="_blank" aria-label="Discord">💬</a>
+                        <a href="https://reddit.com/r/moonshot" class="social-icon" target="_blank" aria-label="Reddit">📱</a>
+                        <a href="https://medium.com/@moonshot" class="social-icon" target="_blank" aria-label="Medium">📝</a>
+                    </div>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Enter your email" class="newsletter-input" id="newsletterEmail" required>
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

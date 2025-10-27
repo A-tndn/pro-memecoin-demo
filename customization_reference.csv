@@ -1,0 +1,36 @@
+Component,Location in Code,What to Search,How to Change,Example
+Coin Name,Throughout entire file,MOONSHOT,Replace all instances with your coin name,MOONSHOT → DOGECOIN
+Page Title,Inside <head> tag,<title>MOONSHOT,Change text between <title> tags,<title>Your Coin Name - Meme Coin</title>
+Primary Color,CSS :root section,--primary-color: #8B5CF6,Change hex code,--primary-color: #3B82F6
+Secondary Color,CSS :root section,--secondary-color: #EC4899,Change hex code,--secondary-color: #10B981
+Hero Headline,Hero section,<h1>Welcome to MOONSHOT</h1>,Change text inside h1 tags,<h1>Welcome to YourCoin</h1>
+Hero Subheadline,Hero section,The Next Generation Meme Coin,Change paragraph text,Your custom tagline here
+Buy Now Link,Navigation & Hero,"href=""https://pancakeswap",Update URL to your DEX,"href=""https://uniswap.org/..."""
+About Text,About section,"<section id=""about"">",Replace all paragraph text,Write your project description
+Feature Icons,About section,"<div class=""feature-icon"">",Change emoji or add <img> tag,"👥 → 💎 or <img src=""icon.png"">"
+Total Supply,Tokenomics section,"<p>1,000,000,000</p>",Change number,"<p>100,000,000</p>"
+Tax Structure,Tokenomics section,"<p>5% (3% Marketing, 2% LP)</p>",Change percentages,"<p>10% (5% Rewards, 5% LP)</p>"
+Contract Address,Tokenomics section,<p>0x742d35Cc...,Paste your full contract address,<p>0xYourContractAddress</p>
+Blockchain,Tokenomics section,<p>Ethereum</p>,Change blockchain name,<p>Binance Smart Chain</p>
+Pie Chart Data,JavaScript section,const data = [,Change values and labels in array,"{ label: 'Staking', value: 25 }"
+Pie Chart Colors,JavaScript section,color: '#8B5CF6',Change hex codes in data array,color: '#FF6B6B'
+Roadmap Phases,Roadmap section,"<div class=""timeline-item"">",Add/remove/edit timeline items,"Add new phase with <div class=""timeline-item"">"
+Phase Status Icons,Roadmap section,✅ Website Launch,"Change emoji (✅=done, 🔄=progress, ⭕=upcoming)",🔄 for in-progress items
+Team Member Name,Team section,<h3>Alex Thompson</h3>,Change name in h3 tag,<h3>Your Name</h3>
+Team Member Role,Team section,"<p class=""team-role"">",Change role text,"<p class=""team-role"">CTO</p>"
+Team Member Bio,Team section,"<p class=""team-bio"">",Replace bio text,Write 2-3 sentence bio
+Team Avatar,Team section,"<div class=""team-avatar"">AT</div>",Change initials or add image,"<div class=""team-avatar"">JD</div>"
+Twitter Link,Footer & Team,"href=""https://twitter.com/",Update with your handle,"href=""https://twitter.com/yourhandle"""
+Telegram Link,Footer & Team,"href=""https://t.me/",Update with your channel,"href=""https://t.me/yourchannel"""
+Discord Link,Footer,"href=""https://discord.gg/",Update with your server invite,"href=""https://discord.gg/yourserver"""
+Footer Description,Footer section,Join the MOONSHOT revolution,Change footer tagline,Your custom footer text
+Copyright Text,Footer section,© 2025 MOONSHOT,Update year and name,© 2025 Your Coin Name
+Background Color,CSS :root section,--bg-dark: #0F172A,Change hex code for dark backgrounds,--bg-dark: #1A1A2E
+Text Color,CSS :root section,--text-light: #F8FAFC,Change hex code for light text,--text-light: #FFFFFF
+Button Hover Effect,CSS button styles,transform: translateY(-2px),Change Y value for hover lift,transform: translateY(-5px)
+Animation Speed,CSS animations,transition: 0.3s,Change duration (in seconds),transition: 0.5s
+Mobile Menu Icon,Navigation,☰,Change hamburger icon,Use any emoji or icon
+Hero Icon,Hero section,"<div class=""hero-icon"">🚀</div>",Change rocket emoji,"💎, 🌙, ⭐, 🔥, etc."
+Whitepaper Link,Hero CTA,"href=""#""",Add link to your whitepaper PDF,"href=""whitepaper.pdf"""
+Meta Description,Inside <head>,"<meta name=""description""",Change description text,Your SEO-friendly description
+Favicon,Inside <head>,🚀 (emoji favicon),Add custom favicon link,"<link rel=""icon"" href=""favicon.ico"">"
